@@ -14,4 +14,5 @@ RUN python3.9 -m pip install pip --upgrade
 RUN python3.9 -m pip install wheel
 RUN apt install -y git
 RUN apt-get install -y rake
-RUN sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+RUN apt-get install -y openssh-client
+RUN apt-get install -y openssh-server
